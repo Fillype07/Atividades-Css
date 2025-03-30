@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Dropdown - Gêneros Musicais</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+  <style>
+    .btn-custom {
+      background-color: #1ab6ca; 
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn-custom:hover {
+      background-color: #058d0c;
+    }
+    .dropdown-menu {
+      background-color: #343a40; 
+      color: white;
+    }
+    .dropdown-item {
+      color: white; 
+    }
+    .dropdown-item:hover {
+      background-color: #495057; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5 d-flex justify-content-center">
+    <div class="dropdown">
+      <button class="btn btn-custom dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        🎵 Escolha seu som
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://youtu.be/ZhIsAZO5gl0" target="_blank">Rock</a>
+        <a class="dropdown-item" href="https://youtu.be/hT_nvWreIhg" target="_blank">Pop</a>
+        <a class="dropdown-item" href="https://youtu.be/-bBzIgIaPS4" target="_blank">Jazz</a>
+        <a class="dropdown-item" href="https://youtu.be/PAUlCK8kuGU" target="_blank">MPB</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
