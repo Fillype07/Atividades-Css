@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Álbuns do Sabaton</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead {
+            background-color: #f4a261;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #918d8d;
+        }
+        tbody tr.highlight {
+            background-color: #066806;
+        }
+        tbody tr:hover {
+            background-color: #8f820c;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Álbuns do Sabaton</caption>
+        <thead>
+            <tr>
+                <th>Nome do Artista</th>
+                <th>Nome do Álbum</th>
+                <th>Ano de Lançamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sabaton</td>
+                <td>The Art of War</td>
+                <td>2008</td>
+            </tr>
+            <tr>
+                <td>Sabaton</td>
+                <td>Carolus Rex</td>
+                <td>2012</td>
+            </tr>
+            <tr class="highlight">
+                <td>Sabaton</td>
+                <td>The Last Stand</td>
+                <td>2016</td>
+            </tr>
+            <tr class="highlight">
+                <td>Sabaton</td>
+                <td>The Great War</td>
+                <td>2019</td>
+            </tr>
+            <tr class="highlight">
+                <td>Sabaton</td>
+                <td>The War to End All Wars</td>
+                <td>2022</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
