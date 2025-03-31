@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomWeb - Agenda de Shows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            background-color: #241818;
+            color: #fff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #7a6b61; 
+            margin-top: 0;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+        }
+        .grade-shows {
+            display: grid;
+            grid-template-columns: 120px 200px 250px 200px; 
+            gap: 15px; 
+            text-align: center;
+        }
+        .grade-shows div {
+            padding: 15px; 
+            border: 1px solid #555; 
+            background-color: #241818; 
+            color: #fff; 
+            border-radius: 5px; 
+        }
+        .header {
+            font-weight: bold;
+            background-color: #241818; 
+            color: #fff;
+        }
+        .grade-shows div:nth-child(8n+5),
+        .grade-shows div:nth-child(8n+6),
+        .grade-shows div:nth-child(8n+7),
+        .grade-shows div:nth-child(8n+8) {
+            background-color: #555;
+        }
+        .grade-shows div:hover {
+            background-color: #666; 
+            cursor: pointer; 
+        }
+        @media (max-width: 768px) {
+            .grade-shows {
+                grid-template-columns: 100px 150px 200px 150px;
+                gap: 15px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .grade-shows div {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .header {
+                background-color: #111; 
+            }
+        }
+        @media (max-width: 480px) {
+            .grade-shows {
+                grid-template-columns: 1fr; 
+            }
+            .grade-shows div {
+                padding: 8px;
+                font-size: 12px;
+            }
+            .header {
+                background-color: #000; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Agenda de Shows - SomWeb</h1>
+    <div class="grade-shows">
+        <div class="header">Data</div>
+        <div class="header">Cidade</div>
+        <div class="header">Local</div>
+        <div class="header">Artista</div>
+
+        <div>03/05/2025</div>
+        <div>Brazil, São Paulo</div>
+        <div>Memorial da América Latina</div>
+        <div>Sabaton</div>
+
+        <div>06/05/2025</div>
+        <div>Argentina,Buenos Aires</div>
+        <div>Teatro Flores</div>
+        <div>Sabaton</div>
+
+        <div>09/05/2025</div>
+        <div>Colombia, Bogota</div>
+        <div>Royal Center</div>
+        <div>Sabaton</div>
+
+        <div>09/05/2025</div>
+        <div>Chile, Santiago</div>
+        <div>Movistar Arena</div>
+        <div>Sabaton</div>
+
+        <div>15/04/2025</div>
+        <div>Costa Rica,San Jose</div>
+        <div>Pepper Club</div>
+        <div>Sabaton</div>
+    </div>
+</body>
+</html>
